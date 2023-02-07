@@ -41,7 +41,7 @@ def listen_for_tasks():
         # decode the binary message body to a string
         print(f" [x] Received {body.decode()}")
         # simulate work by sleeping for the number of dots in the message
-        time.sleep(body.count(b"."))
+        time.sleep(body.count(b"..."))
         # when done with task, tell the user
         print(" [x] Done")
         # acknowledge the message was received and processed 

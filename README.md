@@ -34,7 +34,7 @@ Explore the RabbitMQ website.
 1. Run listening_worker.py
 
 Will it terminate on its own? How do you know? 
-
+It will not unless the user presses a key due to the keyboard interrupt
 ## Ready for Work
 
 1. Use your emitter_of_tasks to produce more task messages.
@@ -58,3 +58,5 @@ Which worker gets which tasks?
 ## Screenshot
 
 See a running example with at least 3 concurrent process windows here:
+![Fedora Linux Arm64](screenshot.png)
+#In v3_emitter_of_tasts.py, we open the csv, and turn each row into a string, which is then sent as a message
